@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVPEC | Add Student</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>SVPEC Portal</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="students.html">Students</a>
+      <a href="add-student.html">Add Student</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Add New Student</h1>
+    <p>Enter the student's details below.</p>
+
+    <section class="card">
+      <form id="studentForm" onsubmit="return addStudent()">
+        <label for="rollNumber">Roll Number</label>
+        <input type="text" id="rollNumber" placeholder="Enter roll number" required>
+
+        <label for="studentName">Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter student name" required>
+
+        <label for="department">Department</label>
+        <select id="department" required>
+          <option value="">Select department</option>
+          <option value="CSE">CSE</option>
+          <option value="AIML">AIML</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="IT">IT</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Civil">Civil</option>
+        </select>
+
+        <button type="submit" class="button">Add Student</button>
+      </form>
+      <p id="formMessage"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>SVPEC Student Management Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

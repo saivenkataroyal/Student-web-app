@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVPEC | Student List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>SVPEC Portal</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="students.html">Students</a>
+      <a href="add-student.html">Add Student</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Student Records</h1>
+    <p>View and manage registered students.</p>
+
+    <section class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>Roll Number</th>
+            <th>Student Name</th>
+            <th>Department</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
+      <p id="emptyMessage">No students added yet.</p>
+    </section>
+
+    <a class="button" href="add-student.html">Add a Student</a>
+  </main>
+
+  <footer>
+    <p>SVPEC Student Management Portal</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
